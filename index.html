@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles/app.css">
+    <script src="assets/scripts/app.js" defer></script>
+    <title>Projects Board</title>
+</head>
+<body>
+    <header id="main-header">
+        <div class="main-heading">
+            <h1>Project Planner</h1>
+        </div>
+    </header>
+
+    <template id="tooltip-template" >
+        <p class="card-description" style="margin: 0;" ></p>
+    </template>
+    <section id="active-projects" >
+
+        <header>
+            <h2>Active Projects</h2>
+        </header>
+
+        <ul>
+            <li id="p1" class="card" data-extra-info="Got lifetime access, but would be nice to finish it soon!" draggable="true">
+                <h3 class="card-heading" >Finish The Course</h3>
+                <p class="card-description" >Finish the course within the next two weeks.</p>
+                <div class="card-actions">
+                    <button class="btn btn--passive" >More Info</button>
+                    <button class="btn btn--active" >Finish</button>
+                </div>
+            </li>
+            <li id="p2" class="card"data-extra-info="Not really a business topic but still important." draggable="true">
+                <h3 class="card-heading" >Buy Groceries</h3>
+                <p class="card-description" >Don't forget to pick up groceries today.</p>
+                <div class="card-actions">
+                    <button class="btn btn--passive" >More Info</button>
+                    <button class="btn btn--active" >Finish</button>
+                </div>
+            </li>
+            <li id="p3" class="card"data-extra-info="Not really a business topic but still important." draggable="true">
+                <h3 class="card-heading" >Buy Groceries</h3>
+                <p class="card-description" >Don't forget to pick up groceries today.</p>
+                <div class="card-actions">
+                    <button class="btn btn--passive" >More Info</button>
+                    <button class="btn btn--active" >Finish</button>
+                </div>
+            </li>
+            <li id="p4" class="card"data-extra-info="Not really a business topic but still important." draggable="true">
+                <h3 class="card-heading" >Buy Groceries</h3>
+                <p class="card-description" >Don't forget to pick up groceries today.</p>
+                <div class="card-actions">
+                    <button class="btn btn--passive" >More Info</button>
+                    <button class="btn btn--active" >Finish</button>
+                </div>
+            </li>
+        </ul>
+
+    </section>
+    <section id="finished-projects" >
+        <header>
+            <h2>Finished Projects</h2>
+        </header>
+
+        <ul>
+            <li id="p5" class="card" data-extra-info="Super important conference! Fictional but still!" draggable="true">
+                <h3 class="card-heading" >Finish The Course</h3>
+                <p class="card-description" >Finish the course within the next two weeks.</p>
+                <div class="card-actions">
+                    <button class="btn btn--passive" >More Info</button>
+                    <button class="btn btn--active" >Activate</button>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+/* .scrollbox {
+    width: 10em;
+    height: 10em;
+    overflow: auto;
+    visibility: hidden;
+}
+.scrollbox-content,
+.scrollbox:hover {
+    visibility: visible;
+} */
+
+.btn {
+    font-family: inherit;
+    background-color: #ffffff;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    border: 1px solid #000000;
+    cursor: pointer;
+    pointer-events: all;
+}
+
+.btn--passive {
+    border-color: #ff0062;
+    color: #ff0062;
+}
+
+.btn--active {
+    border-color: #ff0062;
+    color: #ffffff;
+    background-color: #ff0062;
+}
+
+.btn--passive:hover,
+.btn--active:hover {
+    border-color: #ff0062dc;
+    color: white;
+    background-color: #ff0062dc;
+}
+
+#main-header {
+    width: 100%;
+    height: 6rem;
+    background: #ff0062;
+}
+
+#main-header .main-heading {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-header .main-heading h1 {
+    color: white;
+    margin: 0;
+}
+
+#active-projects {
+    width: 40rem;
+    max-width: 90%;
+    margin: 1rem auto;
+    border: 1px solid #870099;
+}
+
+#active-projects header {
+    background: #870099;
+    padding: 1rem;
+}
+
+#active-projects header h2,
+#finished-projects header h2 {
+    color: white;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 1rem;
+    max-height: 20rem;
+    overflow: scroll;
+}
+
+/* ul:hover {
+    overflow-y: scroll;
+} */
+
+.card {
+    margin: 1rem 0rem;
+    padding: 2rem 1rem 1rem 1rem;
+    border: 1px solid #dfdfdf;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 1px 1px 5px #bbbbbb;
+}
+
+.card .card-heading {
+    margin: 0;
+}
+
+.tooltip-card {
+    margin: 0rem;
+    padding: 1rem;
+    background: white;
+    border: 1px solid #dfdfdf;
+    border-radius: 8px;
+    box-shadow: 1px 1px 5px #bbbbbb;
+}
+
+#finished-projects {
+    width: 40rem;
+    max-width: 90%;
+    margin: 1rem auto;
+    border: 1px solid #535353;
+}
+
+#finished-projects header {
+    background: #535353;
+    padding: 1rem;
+}
+
+#active-projects.dropzone {
+    background-color: #ffe0ec;
+}
+
+#finished-projects.dropzone {
+    background-color: #cccccc;
+}
