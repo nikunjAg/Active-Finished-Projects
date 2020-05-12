@@ -252,3 +252,4 @@ class App {
 }
 
 App.init();
+// This will initiate the creation of the active project List instance and finished project list instance.
