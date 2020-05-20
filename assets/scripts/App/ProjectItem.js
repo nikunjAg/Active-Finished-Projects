@@ -1,4 +1,6 @@
-class ProjectItem {
+import { Tooltip } from "./Tooltip.js";
+
+export class ProjectItem {
 	hasActiveTooltip = false;
 	constructor(id, switchProjectFunction) {
 		this.id = id;

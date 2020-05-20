@@ -1,4 +1,4 @@
-class Tooltip {
+export class Tooltip {
 	constructor(hostElementId, text, closeNotifierFunction) {
 		this.hostElementId = hostElementId;
 		this.text = text;

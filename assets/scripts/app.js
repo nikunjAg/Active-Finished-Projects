@@ -1,3 +1,5 @@
+import { ProjectList } from "./App/ProjectList.js";
+
 // bind can be called only once on a single method second time calling will not make any effect
 class App {
 	static init() {
@@ -9,7 +11,7 @@ class App {
         );
         finishedProjectsList.setSwitchProjectHandler(
             activeProjectsList.addProject.bind(activeProjectsList)
-        );   ORR BELOW   */
+        );   OR BELOW   */
 
 		activeProjectsList.switchHandler = finishedProjectsList.addProject.bind(
 			finishedProjectsList
