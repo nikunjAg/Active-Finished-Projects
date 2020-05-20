@@ -1,5 +1,3 @@
-import { Tooltip } from "./Tooltip.js";
-
 export class ProjectItem {
 	hasActiveTooltip = false;
 	constructor(id, switchProjectFunction) {
@@ -13,11 +11,17 @@ export class ProjectItem {
 	showInfoHandler() {
 		if (this.hasActiveTooltip) return;
 		const element = document.getElementById(this.id);
-		const tooltip = new Tooltip(this.id, element.dataset.extraInfo, () => {
-			this.hasActiveTooltip = false;
+		import("./Tooltip.js").then((module) => {
+			const tooltip = new module.Tooltip(
+				this.id,
+				element.dataset.extraInfo,
+				() => {
+					this.hasActiveTooltip = false;
+				}
+			);
+			tooltip.attach(this);
+			this.hasActiveTooltip = true;
 		});
-		tooltip.attach(this);
-		this.hasActiveTooltip = true;
 	}
 
 	connectMoreInfoButton() {
